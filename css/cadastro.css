@@ -2,20 +2,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 header {
     padding: 40px;
     background-image: linear-gradient(to left, #fd6806, #ffbc13);
-    background-color: #333300;
 }
 h1 {
     text-align: center;
+    font-size: 1.9rem;
     padding: 5px;
     line-height: 1.6rem;
     color: #ffffff;
     text-transform: uppercase;
 }
+form {
+    max-width: 800px;
+    width: 100%;
+    padding: 10px 10px 30px 10px;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.6s;
+}
+form:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+label {color: #252220; font-weight: 300;}
 input[type="text"], select {
     box-sizing: border-box;
     width: 100%;
@@ -58,24 +71,38 @@ footer {
     color: hsl(0, 0%, 100%);
     width: 100%;
 }
+#text-main {
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+    color: #252220;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
 #sexo, #estado {background-color: white;}
+.content-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #efe9e5;
+}
+.formBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #ffffff;
-}
-.formBox {
-    position: relative;
-    max-width: 700px;
     width: 100%;
-    padding: 30px 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 30px 0;
 }
-.formBox:hover {box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -99,3 +126,13 @@ footer {
 .footer-content a svg {width: 32px; height: 32px;margin: 0 10px;fill:#ffffff;}
 .footer-content a #github:hover {fill:black;}
 .footer-content a #linkedin:hover {fill:#1036aa;}
+
+/** responsive **/
+@media screen and (max-width: 767px) {
+    .column-md {width:100%;}
+}
+@media screen and (max-width: 575px) {
+    h1 {font-size: 1.5rem;}
+    .column {width:100%;}
+    .footer-content p {line-height: 1.5rem;}
+}
