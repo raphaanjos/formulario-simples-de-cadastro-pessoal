@@ -1,8 +1,9 @@
-<h1 sytle="font-size:16px;text-align:center;padding:3px;background-color:#ccc;border-radius:3px;color:#111;">Programa de Formação Itaú Tech/Terceira Edição</h1>
+   
+
+<h1 sytle="font-size:16px;text-align:center;padding:3px;background-color:#efe9e5;border-radius:3px;color:#252220;">Programa de Formação Itaú Tech/Terceira Edição</h1>
 
 <hr sytle="1px solid #ccc;">
-
-<h3>Projeto</h3>
+<h3 style="color:#252220;">Projeto</h3>
 
 **Desafio Cadastro Pessoal - Atração**
 
@@ -48,9 +49,10 @@ Visual Studio Code - Linux
 HTML, CSS e JavaScript
 
 <hr style="1px solid #ccc;">
-
 **Referências**
 
 * <a href="https://www.w3schools.com/css/default.asp">W3schools, site educacional voltado ao aprendizado de tecnologias web</a>
 * <a href="https://dev.to/laurolyra/adicionando-mascaras-nos-inputs-html-js-vanilla-5f1l">Adicionando máscaras nos inputs HTML (JS vanillha)</a>
 * <a href="https://valchan.com.br/mask-input/">Como criar máscaras(mask) com o regex</a>
+* <a href="https://youtu.be/r-8isv_TnVA">Máscaras para formulários em Vanilla JavaScript</a>
+

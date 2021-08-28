@@ -29,7 +29,7 @@ form:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 label {color: #252220; font-weight: 300;}
-input[type="text"], select {
+input[type="text"], input[type="email"], select {
     box-sizing: border-box;
     width: 100%;
     padding: 10px 8px;
@@ -40,7 +40,7 @@ input[type="text"], select {
     border-radius: 3px;
     resize: vertical;
 }
-input[type="text"]:focus, select:focus {outline-color: #bfbfbf;}
+input[type="text"]:focus, input[type="email"]:focus, select:focus {outline-color: #bfbfbf;}
 input[type="submit"], input[type="reset"] {
     box-sizing: border-box;
     width: 100%;
@@ -58,11 +58,12 @@ input[type="submit"], input[type="reset"] {
     letter-spacing: 1px;
 }
 input[type="submit"] {color: white;background-color: #1036aa;}
-input[type="submit"]:hover {background-color: #113cbb;}
+input[type="submit"]:hover {background-color: #113cbb;transition: 0.6s;}
 input[type="submit"]:focus {outline-color:#0d2d8c;}
 input[type="reset"] {background-color: #bfbfbf;color: #000;}
-input[type="reset"]:hover {background-color: #b3b3b3;}
+input[type="reset"]:hover {background-color: #b3b3b3;transition: 0.6s;}
 input[type="reset"]:focus {outline-color: #a6a6a6;}
+small {font-size: 0.85rem;letter-spacing: 1px;}
 footer {
     position: relative;
     padding: 30px;
@@ -107,6 +108,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
+.obrigatorio {color: #ff0000;}
 .col-12 {width: 100%;margin: 2px 0 0 0; padding: 0 6px;}
 .col-9 {width: 75%;margin: 2px 0 0 0; padding: 0 6px;}
 .col-6 {width: 50%;margin: 2px 0 0 0; padding: 0 6px;}
