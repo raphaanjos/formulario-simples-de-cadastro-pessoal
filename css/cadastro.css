@@ -1,3 +1,5 @@
+/**  stylesheet da landing page formulario simples de cadastro pessoal  */
+
 *{
     padding: 0;
     margin: 0;
@@ -73,6 +75,14 @@ footer {
     color: hsl(0, 0%, 100%);
     width: 100%;
 }
+#alert-sucess {
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.6s;
+}
+#alert-sucess:hover { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);}
 #text-main {
     padding: 10px;
     margin: 15px 0;
@@ -109,6 +119,19 @@ footer {
     width: 100%;
     margin: 0 0 30px 0;
 }
+.boxSucess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 30px 0;
+    height: 50vh;
+}
+.boxSucess h1 {color: #252220;}
 .row {
     display: flex;
     flex-wrap: wrap;

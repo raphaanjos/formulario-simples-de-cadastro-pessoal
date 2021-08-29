@@ -1,3 +1,5 @@
+/** script da landing page formulario simples de cadastro pessoal */
+
 // Atualiza o ano no footer do site [ano - ano_JavaScript] &copy;....
 const tempo = new Date();
 document.getElementById('ano').innerHTML = tempo.getFullYear();
@@ -93,7 +95,7 @@ function redefinirMsgEmail(){
     if(error.innerHTML == "Formato de e-mail inválido") {error.innerHTML = "";} // Atribui uma string vazia.
 }
 
-
+// Valida os campos do formulário.
 function validarFormulario() {
     var formulario = document.forms["formcadastro"];
     var nome = formulario.nome.value;
