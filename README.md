@@ -20,7 +20,7 @@
 
 **Autor**
 
-* Raphael Washington Bezerra dos Anjos Melo, 32 anos.
+* Raphael Washington Bezerra dos Anjos Melo, 38 anos.
 * **Tipo de deficiência:** física - atrofia e encurtamento e déficit de força. Sequela de paralisia obstétrica no membro superior direito.
 
 <hr style="1px solid #ccc;">
@@ -49,10 +49,23 @@ Visual Studio Code - Linux
 HTML, CSS e JavaScript
 
 <hr style="1px solid #ccc;">
+
 **Referências**
 
-* <a href="https://www.w3schools.com/css/default.asp">W3schools, site educacional voltado ao aprendizado de tecnologias web</a>
-* <a href="https://dev.to/laurolyra/adicionando-mascaras-nos-inputs-html-js-vanilla-5f1l">Adicionando máscaras nos inputs HTML (JS vanillha)</a>
-* <a href="https://valchan.com.br/mask-input/">Como criar máscaras(mask) com o regex</a>
-* <a href="https://youtu.be/r-8isv_TnVA">Máscaras para formulários em Vanilla JavaScript</a>
+
+* <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3schools, site educacional voltado ao aprendizado de tecnologias web</a>
+
+* <a href="https://dev.to/laurolyra/adicionando-mascaras-nos-inputs-html-js-vanilla-5f1l" target="_blank">Adicionando máscaras nos inputs HTML (JS vanillha)</a>
+
+* <a href="https://valchan.com.br/mask-input/" target="_blank">Como criar máscaras(mask) com o regex</a>
+
+* <a href="https://youtu.be/r-8isv_TnVA" target="_blank">Máscaras para formulários em Vanilla JavaScript</a>
+
+* <a href="https://codepen.io/lucassoares/pen/xVyOQd" target="_blank">Validação de e-mail via JavaScript</a>
+
+* <a href="https://youtu.be/5GVBe4vwW8o" target="_blank">Validação de e-mail com expressão regular em JavaScript</a>
+
+  
+  
+  
 

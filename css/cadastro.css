@@ -40,6 +40,7 @@ input[type="text"], input[type="email"], select {
     border-radius: 3px;
     resize: vertical;
 }
+input[type="email"]:invalid {border-color: #ff0000;}
 input[type="text"]:focus, input[type="email"]:focus, select:focus {outline-color: #bfbfbf;}
 input[type="submit"], input[type="reset"] {
     box-sizing: border-box;
@@ -81,6 +82,10 @@ footer {
     line-height: 1.5rem;
 }
 #sexo, #estado {background-color: white;}
+#email-invalido, #nome_error, #cpf_error, 
+#rg_error, #cep_error, #telCelular_error, 
+#sexo_error, #telFixo_error, #logradouro_error {color:#ff0000;font-size: 0.85rem;letter-spacing: 1px;}
+
 .content-header {
     display: flex;
     justify-content: space-around;

@@ -70,7 +70,6 @@ const masks = {
     }
 }
 
-
 /* 
     Adiciona eventos nos elementos de formulário. Retorna um objeto NodeList estático.
     Itera pela NodeList, que retorna todos os elementos de inputs
@@ -83,8 +82,124 @@ document.querySelectorAll('input').forEach(($input) => {
 }) ;
 // Fim máscara de formulário
 
+// E-mail
+function validarEmail(){
+    let email = document.querySelector("#email");
+    let error = document.querySelector("#email-invalido");
+    if(!email.checkValidity()) {error.innerHTML = "Formato de e-mail inválido";} // Checa se o e-mail tem formato válido.
+}
+function redefinirMsgEmail(){
+    let error = document.querySelector("#email-invalido");
+    if(error.innerHTML == "Formato de e-mail inválido") {error.innerHTML = "";} // Atribui uma string vazia.
+}
+
 
 function validarFormulario() {
- // implementar
-    
+    var formulario = document.forms["formcadastro"];
+    var nome = formulario.nome.value;
+    var cpf = formulario.cpf.value;
+    var rg = formulario.rg.value;
+    var sexo = formulario.sexo.value;
+    var logradouro = formulario.logradouro.value;
+    var numero = formulario.numero.value;
+    var complemento = formulario.complemento.value;
+    var cep = formulario.cep.value;
+    var cidade = formulario.cidade.value;
+    var bairro = formulario.bairro.value;
+    var estado = formulario.estado.value;
+    var email = formulario.email.value;
+    var tel_celular = formulario.tel_celular.value;
+    var tel_fixo = formulario.tel_fixo.value;
+
+    var erro = false;
+
+ if (nome.trim().length < 7) {
+    alert("Insira seu nome completo.");
+    erro = true;
+}
+
+if (cpf.replace(".", "").replace(".", "").replace("-", "").trim().length != 11) {
+    alert("Verifique o seu CPF.");
+    erro = true;
+}
+
+if (rg.trim() != 0 && rg.replace("-", "").trim().length < 5) {
+    alert("Verifique o seu RG.");
+    erro = true;
+}
+
+if (sexo.trim() !== "Masculino" && sexo.trim() !== "Feminino") {
+    alert("Escolha um item da lista Sexo.");
+    erro = true;
+}
+
+if (logradouro.trim().length < 4) {
+    alert("Verifique o campo Logradouro.");
+    erro = true;
+}
+
+if (numero.trim().length == 0) {
+    alert("Preencha o campo Número.");
+    erro = true;
+}
+
+if (complemento.trim() != 0 && complemento.trim().length < 4){
+    alert("Verifique o campo Complemento.");
+    erro = true;
+}
+
+if (cep.replace("-", "").trim().length != 8){
+    alert("Verifique o campop CEP.");
+    erro = true;
+}
+
+if (cidade.trim() == 0 || cidade.trim().length < 4) {
+    alert("Verifique o campo Cidade.");
+    erro = true;
+}
+
+if (bairro.trim() == 0 || bairro.trim().length < 5) {
+    alert("Preencha o campo Bairro.");
+    erro = true;
+}
+
+if (estado.trim() == 0) {
+    alert("Escolha um item da lista Estado.");
+    erro = true;
+}
+
+if (email.trim() != 0 && !checkEmail(email.trim())){
+    alert("Verifique o formato do email.");
+    erro = true;
+}
+
+if (document.getElementById("tel_celuar").value.replace("(", "").replace(")", "").replace(" ", "").replace("-", "").trim().length != 11) {
+    alert("Verifique o campo Telefone Celular.");
+    erro = true;
+}
+
+if (document.getElementById("tel_fixo").value.trim() != 0 && document.getElementById("tel_fixo").value.replace("(", "")
+.replace(")", "").replace(" ", "").replace("-", "").trim().length < 11) {
+    alert("Verifique o campo Telefone Fixo.");
+    erro = true;
+}
+
+if (erro) {
+    return false;
+}else {
+    alert("Dados enviados com sucesso!");
+    return true;
+}
+
+}
+
+// Verifica o formato do e-mail: exemplo3@email.x || exemplo@email.xx.xx, exemplo@email.x
+function checkEmail(email){
+    const regexemail1 = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,3}\.[a-zA-Z]{1,3}$/;
+    const  regexemail2 = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,8}$/;
+    if (regexemail1.test(email) || regexemail2.test(email)) {
+        return true;
+    } else {
+        return false;
+    }
 }
