@@ -175,12 +175,12 @@ if (email.trim() != 0 && !checkEmail(email.trim())){
     erro = true;
 }
 
-if (document.getElementById("tel_celuar").value.replace("(", "").replace(")", "").replace(" ", "").replace("-", "").trim().length != 11) {
+if (tel_celuar.replace("(", "").replace(")", "").replace(" ", "").replace("-", "").trim().length != 11) {
     alert("Verifique o campo Telefone Celular.");
     erro = true;
 }
 
-if (document.getElementById("tel_fixo").value.trim() != 0 && document.getElementById("tel_fixo").value.replace("(", "")
+if (tel_fixo.trim() != 0 && tel_fixo.replace("(", "")
 .replace(")", "").replace(" ", "").replace("-", "").trim().length < 11) {
     alert("Verifique o campo Telefone Fixo.");
     erro = true;
