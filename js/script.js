@@ -175,7 +175,7 @@ if (email.trim() != 0 && !checkEmail(email.trim())){
     erro = true;
 }
 
-if (tel_celuar.replace("(", "").replace(")", "").replace(" ", "").replace("-", "").trim().length != 11) {
+if (tel_celular.replace("(", "").replace(")", "").replace(" ", "").replace("-", "").trim().length != 11) {
     alert("Verifique o campo Telefone Celular.");
     erro = true;
 }
